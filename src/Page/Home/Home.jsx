@@ -3,6 +3,7 @@ import RouteLocation from '../../Component/RouteLocation/RouteLocation.jsx';
 import Option from '../../Component/Option/Option.jsx';
 import Study from '../../Component/Study/Study.jsx';
 import { FaPlus,FaChevronDown } from "react-icons/fa6";
+import Faq from '../../Component/FAQ/Faq.jsx';
 
 const Home = () => {
     return (
@@ -47,25 +48,7 @@ const Home = () => {
             </div>
 
             {/* FAQ */}
-            <div className='pt-28 px-14 pb-[150px]'>
-                <div>
-                        <h1 className='text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-t from-[#164EC0] to-[#06286E]'>FAQ</h1>
-                </div>
-                <div className='flex-col space-y-8 pt-12'>
-                    <div className='border-2 border-[#217EEC] px-6 h-[55px] w-[840px] rounded-xl flex items-center justify-between'>
-                        <h1 className='text-[#28262C] text-base font-semibold'>Can education flashcards be used for all age groups?</h1>
-                        <h1><FaChevronDown /></h1>
-                    </div>
-                    <div className='border-2 border-[#217EEC] px-6 h-[55px] w-[840px] rounded-xl flex items-center justify-between'>
-                        <h1 className='text-[#28262C] text-base font-semibold'>How do education flashcards work?</h1>
-                        <h1><FaChevronDown /></h1>
-                    </div>
-                    <div className='border-2 border-[#217EEC] px-6 h-[55px] w-[840px] rounded-xl flex items-center justify-between'>
-                        <h1 className='text-[#28262C] text-base font-semibold'>Can education flashcards be used for test preparation?</h1>
-                        <h1><FaChevronDown /></h1>
-                    </div>
-                </div>
-            </div>
+            <Faq></Faq>
         </div>
     );
 };
